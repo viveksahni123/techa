@@ -61,27 +61,19 @@ body {
 
 .home .home-banner-1 {
     background-image: url("slide1.jpg");
-    background-size: cover;
+    
 }
 .home .home-banner-2 {
     background-image: url("slide2.jpg");
-    background-size: cover;
+    
 }
-.home .home-banner-1 .home-banner-text{
+.home .home-banner .home-banner-text{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-110%,-50%);
 }
-.home .home-banner-2 .home-banner-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-110%,-50%);
-}
-.home .home-banner-1 .home-banner-text h1{
-    font-size: 6rem;
-}
+
 .home .home-banner-2 .home-banner-text h1{
     font-size: 6rem;
 }
@@ -90,14 +82,14 @@ body {
     width: 2.5rem;
     height: 0.313rem;
 }
-.home.carousel-control-next-icon,
-.home.carousel-control-prev-icon{
-    background:transparent ;
+.home .carousel-control-next-icon,
+.home .carousel-control-prev-icon{
+    background:transparent;
 }
 .home .slider-icon{
     font-size: 3rem;
     font-weight: 600;
-    color: var(--bg-danger);
+  color:var(--text-danger);
 }
 @media(max-width:1030px){
     .home .home-banner-1,
@@ -105,24 +97,14 @@ body {
         background-position: 65% center;
         min-height: 550px;
     }
-    .home .home-banner .home-banner-text {
-        transform: translate(-80% ,-50%);
-    }   
-}
-@media(max-width:991){
     .home .home-banner .home-banner-text{
-        transform: translate(-66% ,-50%);
+        transform: translate(-80%, -50%);
     }
 }
-@media(max-width:767){
-    .home .home-banner-1,
-    .home .home-banner-2{
-        background-position: center;
-        min-height: 450px;
-    }
+
+@media(max-width:991px){
     .home .home-banner .home-banner-text{
-        text-align: center;
-        width: 100%;
-        transform: translate(-50% , -50%);
+        transform: translate(-66%, -50%);
     }
 }
+
